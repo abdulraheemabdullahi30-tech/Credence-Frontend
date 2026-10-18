@@ -455,7 +455,7 @@ async function buildWithdrawBondTx(bondId: string, address: string): Promise<str
  * @param signedTxXdr - Signed transaction XDR
  * @returns Transaction hash
  */
-async function submitTransaction(signedTxXdr: string): Promise<string> {
+async function submitTransaction(_signedTxXdr: string): Promise<string> {
   // Simulated transaction submission
   await new Promise((resolve) => setTimeout(resolve, 50))
   return `SIMULATED_TX_HASH_${Date.now()}_${Math.random().toString(36).slice(2, 9)}`
